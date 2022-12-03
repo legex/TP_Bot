@@ -7,12 +7,11 @@ import paramiko
 
 log = logging.getLogger(__name__)
 
-# Get a free account at openweathermap.org &
-# insert API key here:
+#Defining login credentials and destination
 dict_creds_host={
-    'hostname':'10.197.193.171',
-    'username':'uclab\Administrator',
-    'password':'tActeam132'
+    'hostname':'hostname/ip',
+    'username':'username',
+    'password':'password'
 }
 
 class DNSAdd(Command):
