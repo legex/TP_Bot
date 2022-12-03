@@ -22,14 +22,14 @@ class DNSAdd(Command):
         # help_message = what message is returned when user sends 'help' message
         # card = optionally send an AdaptiveCard response
         super().__init__(
-            command_keyword="DNS" or "dns",
+            command_keyword="domain update" or "domain update",
             help_message="Syntax: dns add 'fqdn' 'ip'",
             card=None,
         )
 
     def execute(self, message, attachment_actions, activity):
         valid_input=str(message)
-        ptrn1 = r'(\w{3,4}([e,c]|[p,s])(\d{2}\w{2,9}))'
+        ptrn1 = r'(\w{3,4}([e,c]\w{2}|[p,s,u,b]{1,3}\w{2})(\w{2,9})\d?)'
         ptrn2= r'(\d{0,3}\.\d{0,3}\.\d{0,3}\.\d{0,3})'
         match=re.search(ptrn1, valid_input)
         match2=re.search(ptrn2,valid_input)
