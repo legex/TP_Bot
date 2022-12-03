@@ -1,0 +1,37 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.2",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "Medium",
+            "weight": "Bolder",
+            "text": "DNS Entry Add",
+            "horizontalAlignment": "Center"
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "FQDN",
+            "maxLength": 100,
+            "id": "SimpleVal",
+            "inlineAction": {
+                "type": "Action.Submit",
+                "id": "SimpleVal",
+                "title": "FQDN Submit"
+            }
+        },
+        {
+            "type": "Input.Text",
+            "placeholder": "IP Address",
+            "style": "Url",
+            "maxLength": 100,
+            "id": "IPVal",
+            "inlineAction": {
+                "type": "Action.Submit",
+                "id": "IPVal",
+                "title": "IP Submit"
+            }
+        }
+    ]
+}
