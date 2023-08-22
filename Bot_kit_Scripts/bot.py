@@ -9,7 +9,7 @@ from AdminGuides import AdminGuide
 
 # Set Webex API key as the WEBEX_TOKEN environment variable &
 # we'll retrieve that here:
-webex_token = "MDViMzI0OGMtNWU4NS00ODc1LWI5MDEtMmZlYTg0ZDI3YWFjNDdjMTBkOWUtYWM5_PF84_1eb65fdf-9643-417f-9974-ad72cae0e10f"
+webex_token = "Enter_your_Token_Here"
 
 # Bot only needs the Webex token, but optionally we can also
 # restrict who the bot will respond to by user or domain.
