@@ -22,7 +22,6 @@ class AdminGuides(Command):
 
     def execute(self, message, attachment_actions, activity):
         # By default, command keyword will be stripped out before being passed to execute function
-        # For example, If user sends "weather 12345", then message variable will be " 12345"
         # Need to strip the additional whitespace around the input:
         valid_input=str(message)
         ptrn = r'([aA-zZ]{2}\d{2,3})|([r,c][aA-zZ]{3,12}.\d{2}.{0,1})|((roomkit).{0,5})'
