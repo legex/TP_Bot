@@ -5,7 +5,6 @@ from webex_bot.models.command import Command
 
 log = logging.getLogger(__name__)
 
-# Get a free account at openweathermap.org &
 # insert API key here:
 
 
@@ -23,9 +22,7 @@ class Devicetype(Command):
 
     def execute(self, message, attachment_actions, activity):
         # By default, command keyword will be stripped out before being passed to execute function
-        # For example, If user sends "weather 12345", then message variable will be " 12345"
         # Need to strip the additional whitespace around the input:
 
-        # Define our URL, with desired parameters: ZIP code, units, and API Key
         # Message returned will be sent back to the user by bot
         return f"message received: {message}"
