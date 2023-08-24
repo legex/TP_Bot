@@ -29,7 +29,7 @@ class Tshoot(Command):
 
     def execute(self, message, attachment_actions, activity):
         # By default, command keyword will be stripped out before being passed to execute function
-        # For example, If user sends "weather 12345", then message variable will be " 12345"
+
         valid_input=str(message)
         tshoot_steps=[]
         # Need to strip the additional whitespace around the input:
@@ -59,7 +59,5 @@ class Tshoot(Command):
             tshoot_steps="something is not right"
             
         response_message= ("You are facing display issue with {devc}, follow steps below: \n {detail_steps}".format(devc=vc_unit,detail_steps=''.join(final_lst)))
-
-        # Define our URL, with desired parameters: ZIP code, units, and API Key
         # Message returned will be sent back to the user by bot
         return response_message
