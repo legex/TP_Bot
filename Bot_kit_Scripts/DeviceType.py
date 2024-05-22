@@ -5,8 +5,6 @@ from webex_bot.models.command import Command
 
 log = logging.getLogger(__name__)
 
-# insert API key here:
-
 
 class Devicetype(Command):
     def __init__(self):
