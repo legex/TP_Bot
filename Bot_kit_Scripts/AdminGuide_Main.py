@@ -15,7 +15,7 @@ class AdminGuide_Main:
         return tshootlink
         
 
-    def curated_guide(self):
+    def curated_guide(self):                                 #Scraping adming guide links from Cisco
         url='https://www.cisco.com/c/en/us/support/collaboration-endpoints/spark-room-kit-series/products-maintenance-guides-list.html'
         try:
             if self.devices == 'ROOM 70D' or self.devices=='ROOM 55D':
