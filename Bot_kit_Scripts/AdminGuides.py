@@ -6,8 +6,6 @@ from AdminGuide_Main import*
 
 log = logging.getLogger(__name__)
 
-# Get a free account at openweathermap.org &
-# insert API key here:
 class AdminGuides(Command):
     def __init__(self):
         # Define custom command info here
