@@ -29,7 +29,7 @@ class Peripherals(Command):
         valid_input=str(message)
         tshoot_steps=[]
 
-        ptrn = r'([t,s,p,q,r,w][aA-zZ]{0,14}\d{0,2}$)'
+        ptrn = r'([t,s,p,q,r,w][aA-zZ]{0,14}\d{0,2}$)'                # Regex pattern to match hardware devices
         match=re.search(ptrn, valid_input)
         while match!= None:
             try:
