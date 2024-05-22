@@ -8,9 +8,8 @@ import os
 
 log = logging.getLogger(__name__)
 
-# Get a free account at openweathermap.org &
-# insert API key here:
-issue_file=''
+
+issue_file=''        #file location for issues
 location='/home/abhish/snap/code/Test_scripts/Tshoot_info/'
 
 #TP=TroubleshootingTPIssues
